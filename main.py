@@ -2,6 +2,7 @@ import socket
 import sys
 from time import sleep
 
+
 c_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ip = sys.argv[1]
 porta = int(sys.argv[2])
