@@ -18,25 +18,30 @@ O **cliente** se conecta ao **servidor** e pode executar comandos remotamente co
 ## Instalação
 1. Clone este repositório:
 
-`git clone https://github.com/seu-usuario/socket-backdoor.git`
-`cd socket-backdoor`
+```git clone https://github.com/seu-usuario/socket-backdoor.git
+```
+```cd socket-backdoor
+```
 
 2. Verifique se você tem o Python 3.x instalado:
 
-`python3 --version`
+```python3 --version
+```
 
 ## Como Usar
 
 ### Passo 1: Inicie o servidor
 1. No servidor, execute o script server.py para iniciar o "backdoor":
 
-`python3 server.py`
+```python3 server.py
+```
 O servidor ficará escutando na porta 4065 do localhost (127.0.0.1), pronto para aceitar conexões de um cliente.
 
 ### Passo 2: Conecte o cliente ao servidor
 1. No cliente (máquina atacante), execute o script main.py passando o IP e a porta do servidor como parâmetros:
 
-`python3 main.py 127.0.0.1 4065`
+```python3 main.py 127.0.0.1 4065
+```
 2. Agora você pode enviar comandos de terminal para o servidor remotamente e visualizar as saídas.
 
 ### Exemplos de Comandos
